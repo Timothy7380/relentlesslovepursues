@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Joshua Agbede — Engineer, Speaker, Writer</title>
+<meta name="description" content="Template portfolio: hero, talk carousel, testimonials, podcast, book, investments, and writing sections — placeholder content only." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200..900&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500;700&family=Lilita+One&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=8" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">RELENTLESSLOVEPURSUES<span class="accent-dot">.</span></a>
+    <nav class="nav__links">
+      <!-- HIDDEN — uncomment to restore
+      <a href="#talks">Talks</a>
+      <a href="#story">Story</a>
+      <a href="#podcast">Podcast</a>
+      -->
+      <a href="#blog">Blog</a>
+    </nav>
+    <button id="theme-toggle" class="label theme-toggle" type="button" aria-label="Toggle color theme">
+      <svg id="theme-icon-moon" viewBox="0 0 24 24" fill="none" class="icon-sm"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <svg id="theme-icon-sun" viewBox="0 0 24 24" fill="none" class="icon-sm is-hidden"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v2.2M12 19.8V22M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2 12h2.2M19.8 12H22M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <span id="theme-label" class="sr-only">Dark</span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero__meta shell">
+      <span class="label">St. Louis</span>
+    </div>
+
+    <div class="hero__main shell">
+      <h1 class="hero__title">I&rsquo;m<br />Joshua<br />Agbede<span class="accent-dot">.</span></h1>
+      <div class="hero__portrait">
+        <img src="assets/portrait.jpg" alt="Joshua Agbede" class="hero__portrait-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- HIDDEN — TALKS, STORY, PODCAST & INVESTMENTS SECTIONS
+       Uncomment this whole block (and the matching nav links above) to bring them back.
+
+  <section id="talks" class="section">
+    <div class="shell">
+      <h2 class="section-title">I speak at conferences.</h2>
+      <p class="section-lede"><span class="mono-strong">8</span> recorded talks in a horizontal carousel. Use the arrow keys to move, Enter to play the active one here, Escape to stop.</p>
+
+      <a href="#contact" class="btn">
+        Invite me to speak
+        <svg viewBox="0 0 24 24" fill="none" class="icon-sm btn__arrow"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+
+      <div id="talks-track" class="talks-track" role="listbox" tabindex="0"
+        aria-label="8 talks in a horizontal carousel. Use the left and right arrow keys to move one talk, Page Up and Page Down to move ten, Home or End to jump to the ends. Press Enter to play the active talk, Escape to stop.">
+        <div class="talk-card is-active" role="option" aria-selected="true" aria-label="Talk 1 of 8: Designing for Failure at Scale, SignalConf 2026">
+          <div class="talk-card__media"><svg viewBox="0 0 24 24" fill="currentColor" class="icon-lg play-icon"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg></div>
+          <div class="talk-card__caption"><p class="talk-card__title">Designing for Failure at Scale</p><p class="label">SignalConf 2026 &middot; 2026</p></div>
+        </div>
+        <div class="talk-card" role="option" aria-selected="false" aria-label="Talk 2 of 8: The Shape of a Good Abstraction, NorthCode 2025">
+          <div class="talk-card__media"><svg viewBox="0 0 24 24" fill="currentColor" class="icon-lg play-icon"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg></div>
+          <div class="talk-card__caption"><p class="talk-card__title">The Shape of a Good Abstraction</p><p class="label">NorthCode 2025 &middot; 2025</p></div>
+        </div>
+        <div class="talk-card" role="option" aria-selected="false" aria-label="Talk 3 of 8: Agents That Actually Ship, BuildSummit 2025">
+          <div class="talk-card__media"><svg viewBox="0 0 24 24" fill="currentColor" class="icon-lg play-icon"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg></div>
+          <div class="talk-card__caption"><p class="talk-card__title">Agents That Actually Ship</p><p class="label">BuildSummit 2025 &middot; 2025</p></div>
+        </div>
+        <div class="talk-card" role="option" aria-selected="false" aria-label="Talk 4 of 8: Rendering, Revisited, FrontierJS 2024">
+          <div class="talk-card__media"><svg viewBox="0 0 24 24" fill="currentColor" class="icon-lg play-icon"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg></div>
+          <div class="talk-card__caption"><p class="talk-card__title">Rendering, Revisited</p><p class="label">FrontierJS 2024 &middot; 2024</p></div>
+        </div>
+        <div class="talk-card" role="option" aria-selected="false" aria-label="Talk 5 of 8: State Machines for the Rest of Us, DevGather 2024">
+          <div class="talk-card__media"><svg viewBox="0 0 24 24" fill="currentColor" class="icon-lg play-icon"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg></div>
+          <div class="talk-card__caption"><p class="talk-card__title">State Machines for the Rest of Us</p><p class="label">DevGather 2024 &middot; 2024</p></div>
+        </div>
+        <div class="talk-card" role="option" aria-selected="false" aria-label="Talk 6 of 8: What Ten Years of Outages Taught Me, ReliableConf 2023">
+          <div class="talk-card__media"><svg viewBox="0 0 24 24" fill="currentColor" class="icon-lg play-icon"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg></div>
+          <div class="talk-card__caption"><p class="talk-card__title">What Ten Years of Outages Taught Me</p><p class="label">ReliableConf 2023 &middot; 2023</p></div>
+        </div>
+        <div class="talk-card" role="option" aria-selected="false" aria-label="Talk 7 of 8: A Love Letter to Boring Technology, Compound 2022">
+          <div class="talk-card__media"><svg viewBox="0 0 24 24" fill="currentColor" class="icon-lg play-icon"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg></div>
+          <div class="talk-card__caption"><p class="talk-card__title">A Love Letter to Boring Technology</p><p class="label">Compound 2022 &middot; 2022</p></div>
+        </div>
+        <div class="talk-card" role="option" aria-selected="false" aria-label="Talk 8 of 8: Zero to Platform, LaunchDays 2021">
+          <div class="talk-card__media"><svg viewBox="0 0 24 24" fill="currentColor" class="icon-lg play-icon"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg></div>
+          <div class="talk-card__caption"><p class="talk-card__title">Zero to Platform</p><p class="label">LaunchDays 2021 &middot; 2021</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="section">
+    <div class="shell book-grid">
+      <div>
+        <h2 class="section-title">I wrote a book.</h2>
+        <p class="section-lede"><em>Systems of Trust</em> is a deep dive on how distributed systems actually fail, published by Ridgeline Press.</p>
+        <p class="section-lede">It will help you reason about failure modes before they happen, not just recover from them faster. Reviewed by a number of peers across the industry before release.</p>
+        <a href="#" class="btn">
+          Buy the book
+          <svg viewBox="0 0 24 24" fill="none" class="icon-sm btn__arrow"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="book-cover"><span class="label muted">Cover placeholder</span></div>
+    </div>
+
+    <div class="shell testimonials">
+      <p class="label testimonials__heading">What readers say</p>
+      <div class="testimonials__grid">
+        <figure class="quote-card">
+          <blockquote>&ldquo;The chapter on failure domains alone is worth the price. Finally a book that treats reliability as a design constraint, not an afterthought.&rdquo;</blockquote>
+          <figcaption><div><p class="quote-name">S. Reyes</p><p class="label">@sreyes_eng</p></div><span class="label">APR 2026</span></figcaption>
+        </figure>
+        <figure class="quote-card">
+          <blockquote>&ldquo;Recommended this to my whole team. Dense in the best way — every page earns its place.&rdquo;</blockquote>
+          <figcaption><div><p class="quote-name">Tomas L.</p><p class="label">@tomasbuilds</p></div><span class="label">MAR 2026</span></figcaption>
+        </figure>
+        <figure class="quote-card">
+          <blockquote>&ldquo;I&rsquo;ve read a lot of systems books. This is the one I actually reread.&rdquo;</blockquote>
+          <figcaption><div><p class="quote-name">K. Whitfield</p><p class="label">@kwhitfield</p></div><span class="label">MAR 2026</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="podcast" class="section">
+    <div class="shell">
+      <h2 class="section-title">I host a podcast.</h2>
+      <p class="section-lede">I talk to people building the tools I use every day, and I try to ask the questions I actually want answered.</p>
+
+      <div class="podcast-meta label">
+        <span>64 episodes, biweekly</span><span class="muted">&middot;</span><span>self-produced</span>
+      </div>
+
+      <div class="topics">
+        <span class="pill">SHIPPING VS. PERFECTING</span>
+        <span class="pill">OPEN SOURCE ECONOMICS</span>
+        <span class="pill">TEAM TOPOLOGIES</span>
+        <span class="pill">WORK/LIFE BALANCE</span>
+        <span class="pill">DIVERSITY &amp; INCLUSION</span>
+        <span class="pill">AGENTIC WORKFLOWS</span>
+      </div>
+
+      <div class="testimonials">
+        <p class="label testimonials__heading">What listeners say</p>
+        <div class="testimonials__grid">
+          <figure class="quote-card">
+            <blockquote>&ldquo;Long-format done right. The questions actually go somewhere instead of circling back to the same three talking points.&rdquo;</blockquote>
+            <figcaption><div><p class="quote-name">R. Amari</p><p class="label">@ramari_dev</p></div><span class="label">MAR 2026</span></figcaption>
+          </figure>
+          <figure class="quote-card">
+            <blockquote>&ldquo;Listened to the whole back catalog on a road trip. Consistently the best-prepared host I&rsquo;ve heard.&rdquo;</blockquote>
+            <figcaption><div><p class="quote-name">Priya N.</p><p class="label">@priyabuilds</p></div><span class="label">FEB 2026</span></figcaption>
+          </figure>
+          <figure class="quote-card">
+            <blockquote>&ldquo;Recommend this to every junior engineer on my team. Dense but never dry.&rdquo;</blockquote>
+            <figcaption><div><p class="quote-name">D. Okafor</p><p class="label">@dokafor</p></div><span class="label">JAN 2026</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--red">
+    <div class="shell">
+      <h2 class="section-title">I invest in startups.</h2>
+      <p class="section-lede on-red-2">I make angel investments in early-stage companies, sometimes with cash, sometimes as an advisor.</p>
+      <p class="label on-red-2" style="margin-top:2rem;">6 companies &middot; 2 exits</p>
+
+      <div class="invest-grid">
+        <div class="invest-card"><div class="invest-card__row"><p class="invest-card__name">Fieldnote</p><span class="label">INVESTOR</span></div><p class="invest-card__desc">Structured notes for field research teams, synced offline-first.</p><p class="label">ACQUIRED 2025</p></div>
+        <div class="invest-card"><div class="invest-card__row"><p class="invest-card__name">Loomwork</p><span class="label">INVESTOR</span></div><p class="invest-card__desc">Workflow automation for small manufacturing shops.</p><p class="label">ACQUIRED 2024</p></div>
+        <div class="invest-card"><div class="invest-card__row"><p class="invest-card__name">Ridgepath</p><span class="label">ADVISOR</span></div><p class="invest-card__desc">A storage engine tuned for high-write embedded workloads.</p><p class="label">SEED, 2024</p></div>
+        <div class="invest-card"><div class="invest-card__row"><p class="invest-card__name">Harborline</p><span class="label">INVESTOR</span></div><p class="invest-card__desc">Distribution and update infrastructure for desktop apps.</p><p class="label">$6M SEED, 2023</p></div>
+        <div class="invest-card"><div class="invest-card__row"><p class="invest-card__name">Cascade</p><span class="label">INVESTOR</span></div><p class="invest-card__desc">Self-deploying infrastructure for small engineering teams.</p><p class="label">Y COMBINATOR</p></div>
+        <div class="invest-card"><div class="invest-card__row"><p class="invest-card__name">Openframe</p><span class="label">ADVISOR</span></div><p class="invest-card__desc">Turns recorded talks into written developer content.</p><p class="label">EARLY STAGE</p></div>
+      </div>
+
+      <p class="section-lede on-red-2" style="margin-top:2.5rem;font-size:.95rem;max-width:52ch;">I write small checks and mostly follow people whose judgment I trust, usually into rounds they&rsquo;ve already looked at closely.</p>
+    </div>
+  </section>
+  -->
+
+  <!-- BLOG -->
+  <section id="blog" class="section">
+    <div class="shell">
+      <div class="blog-head">
+        <div>
+          <h2 class="section-title">I write a blog.</h2>
+          <p class="section-lede">I don&rsquo;t presume to have anything profound to say, but here are some thoughts.</p>
+        </div>
+      </div>
+
+      <div class="posts">
+        <a href="posts/balance-in-your-life.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">Top tips for creating balance in your life</p><p class="post__excerpt">Then, with the maul, after repeatedly smiting the upper end of this iron rod, he placed the blunted needle endwise on the top of it.</p></div></a>
+        <a href="posts/useful-languages-to-learn.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">The most useful languages to learn in 2026 and beyond</p><p class="post__excerpt">I perceived that in a moment everyone upon this side of the hill would be moving. I found him in his bar, quite unaware of what was going on behind his house.</p></div></a>
+        <a href="posts/mediterranean-diet-benefits.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">5 health benefits of the medi-terranean diet</p><p class="post__excerpt">One after another they peered in, for nothing but their own eyes could persuade such ignorance as theirs.</p></div></a>
+        <a href="posts/slow-practices-that-bring-clarity.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">3 simple, slow practices that bring clarity</p><p class="post__excerpt">I can compare it to nothing but a large door mat, ornamented at the edges with little tinkling tags.</p></div></a>
+        <a href="posts/guilt-of-feeling-happy.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">The guilt of feeling happy and mantras to find your joy</p><p class="post__excerpt">I shouted above the sudden noise. She looked away from me downhill. Then I fetched out the servant.</p></div></a>
+        <a href="posts/what-makes-life-easier.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">What things make your life easier?</p><p class="post__excerpt">I and my wife stood amazed. Then I realised that the crest of Maybury Hill must be within range of the Martians.</p></div></a>
+        <a href="posts/things-i-love-about-getting-older.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">3 of the things I love most about getting older</p><p class="post__excerpt">I began walking, therefore, in a big curve, seeking some point of vantage and continually looking at the sand.</p></div></a>
+        <a href="posts/everything-seems-possible-with-ai.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">Everything seems possible with AI</p><p class="post__excerpt">A moderate incline runs towards the foot of Maybury Hill, and down this we clattered.</p></div></a>
+        <a href="posts/up-for-anything.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">What happens when you&rsquo;re up for anything</p><p class="post__excerpt">Whether indispensable to the magnetizing of the steel, or merely intended to augment the awe of the crew, is uncertain.</p></div></a>
+        <a href="posts/proactive-about-mental-health.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">On being proactive about your mental health</p><p class="post__excerpt">As he did not come I started off on foot in a northwesterly direction toward a point where he had told me lay the nearest waterway.</p></div></a>
+        <a href="posts/curiosity-in-conversations.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">Why curiosity in conversations is key to a healthy relationship</p><p class="post__excerpt">Ere this, you must have plainly seen the truth of what I started with &mdash; that the Sperm Whale and the Right Whale have almost entirely different heads.</p></div></a>
+        <a href="posts/sustaining-work-happiness.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">Insights for creating and sustaining work happiness</p><p class="post__excerpt">The day advanced and the engine drivers and stokers refused to return to London, the pressure of the flight.</p></div></a>
+        <a href="posts/first-affiliate-marketing-hustle.html" class="post"><span class="label">JUL 2026</span><div><p class="post__title">How to launch your first affiliate marketing hustle</p><p class="post__excerpt">I started off at once for the Spotted Dog, for I knew the landlord had a horse and dog cart.</p></div></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer footer--brand">
+  <div class="shell">
+    <p class="brand-mark" aria-label="RelentlessLovePursues"><span style="--i:0">R</span><span style="--i:1">e</span><span style="--i:2">l</span><span style="--i:3">e</span><span style="--i:4">n</span><span style="--i:5">t</span><span style="--i:6">l</span><span style="--i:7">e</span><span style="--i:8">s</span><span style="--i:9">s</span><span style="--i:10">L</span><span style="--i:11">o</span><span style="--i:12">v</span><span style="--i:13">e</span><span style="--i:14">P</span><span style="--i:15">u</span><span style="--i:16">r</span><span style="--i:17">s</span><span style="--i:18">u</span><span style="--i:19">e</span><span style="--i:20">s</span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
