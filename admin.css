@@ -77,3 +77,7 @@
 @media (min-width: 768px) { .admin-foot { display: none; } }
 .admin-tag { display: none; }
 @media (min-width: 420px) { .admin-tag { display: inline-block; } }
+
+/* Same rule as the main site: Inter, no extra letter-spacing */
+.admin-tag, .field > label, .field > .field__label, .tab, .row__meta, .badge, .abtn, .listen__link { font-family: var(--font-body); letter-spacing: 0; }
+.admin-tag { font-size: .65rem; font-weight: 600; }

@@ -671,3 +671,14 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
   font-size: .78rem; letter-spacing: .14em; font-weight: 500;
 }
 #listen .btn, .abtn, .listen__link { font-weight: 700; letter-spacing: .01em; }
+
+/* Nav links and small labels: Inter, no extra letter-spacing.
+   (Logo, hero title and footer wordmark keep their own brand fonts.) */
+.label, .nav__links a, .theme-toggle,
+#blog .label, #listen .label, .article .label, .podcast-page .label, .listen .label, .admin .label,
+.admin .field > label, .admin .field > .field__label, .row__meta, .tab, .badge {
+  font-family: var(--font-body);
+  letter-spacing: 0;
+}
+.label { font-weight: 500; font-size: max(var(--t-label), .8rem); }
+.nav__links a { font-weight: 500; font-size: .9rem; }
