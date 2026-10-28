@@ -21,3 +21,11 @@ All content is placeholder — swap the text directly in `index.html`, and
 replace the "Portrait placeholder" / "Cover placeholder" boxes in
 `index.html`/`styles.css` (`.hero__portrait`, `.book-cover`) with real
 `<img>` tags.
+
+## Podcast page
+
+`podcast.html` lists episodes. Each episode is one `<article class="episode">`
+block. To add one, copy a block, paste it at the top of the list, and swap in
+a YouTube embed, a video file, or a picture — the step-by-step options are in
+the comment box at the top of the episode list inside `podcast.html`.
+Put uploaded videos/images in the `assets` folder.
