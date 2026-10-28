@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200..900&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500;700&family=Lilita+One&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=9" />
+<link rel="stylesheet" href="styles.css?v=10" />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 </head>
 <body>
@@ -38,63 +38,9 @@
       <h1 class="section-title">I host a podcast.</h1>
       <p class="section-lede">Real conversations, with the video and photos to go with them. Press play on an episode below.</p>
 
-      <!--
-        =====================  HOW TO ADD AN EPISODE  =====================
-        1. Copy one whole <article class="episode"> ... </article> block below
-           and paste it at the TOP of the list (newest first).
-        2. Change the episode number, date, title and description.
-        3. In the media box (<div class="episode__media">) put ONE of these:
-
-           A) YouTube video (use the "Embed" link from YouTube > Share > Embed):
-              <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Episode title" loading="lazy" allowfullscreen></iframe>
-
-           B) A video file you upload to the "assets" folder:
-              <video controls preload="metadata" poster="assets/ep-poster.jpg"><source src="assets/episode.mp4" type="video/mp4" /></video>
-
-           C) A picture only:
-              <img src="assets/episode.jpg" alt="Describe the picture" loading="lazy" />
-
-           D) Spotify / Apple embed: paste the iframe they give you.
-
-        4. Remove the class  episode__media--empty  once you have added media.
-        ===================================================================
-      -->
-
-      <div class="episodes">
-      <article class="episode">
-        <div class="episode__media episode__media--empty">
-          <!-- Replace this whole line with ONE of the options in the "HOW TO ADD" box above -->
-          <svg viewBox="0 0 24 24" fill="currentColor" class="icon-lg play-icon" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg>
-        </div>
-        <div class="episode__body">
-          <p class="label">EPISODE 03 &middot; OCT 2026</p>
-          <h2 class="episode__title">Episode 3 title goes here</h2>
-          <p class="episode__desc">A sentence or two about who joined the show and what you talked about.</p>
-        </div>
-      </article>
-      <article class="episode">
-        <div class="episode__media episode__media--empty">
-          <!-- Replace this whole line with ONE of the options in the "HOW TO ADD" box above -->
-          <svg viewBox="0 0 24 24" fill="currentColor" class="icon-lg play-icon" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg>
-        </div>
-        <div class="episode__body">
-          <p class="label">EPISODE 02 &middot; SEP 2026</p>
-          <h2 class="episode__title">Episode 2 title goes here</h2>
-          <p class="episode__desc">A sentence or two about who joined the show and what you talked about.</p>
-        </div>
-      </article>
-      <article class="episode">
-        <div class="episode__media episode__media--empty">
-          <!-- Replace this whole line with ONE of the options in the "HOW TO ADD" box above -->
-          <svg viewBox="0 0 24 24" fill="currentColor" class="icon-lg play-icon" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg>
-        </div>
-        <div class="episode__body">
-          <p class="label">EPISODE 01 &middot; AUG 2026</p>
-          <h2 class="episode__title">Episode 1 title goes here</h2>
-          <p class="episode__desc">A sentence or two about who joined the show and what you talked about.</p>
-        </div>
-      </article>
-      </div>
+      <!-- Episodes are listed in  episodes.js  (not here). Edit that file to add or change episodes. -->
+      <div class="episodes" id="episodes"></div>
+      <noscript><p class="section-lede">Please turn on JavaScript to see the episodes.</p></noscript>
     </div>
   </section>
 </main>
@@ -105,6 +51,18 @@
   </div>
 </footer>
 
+
+<dialog id="listen-dialog" class="listen" aria-labelledby="listen-title">
+  <div class="listen__panel">
+    <button type="button" class="listen__close" aria-label="Close" data-close>&times;</button>
+    <p class="label">Listen on</p>
+    <h2 class="listen__title" id="listen-title"></h2>
+    <div class="listen__links" id="listen-links"></div>
+  </div>
+</dialog>
+
 <script src="script.js"></script>
+<script src="episodes.js"></script>
+<script src="podcast.js"></script>
 </body>
 </html>

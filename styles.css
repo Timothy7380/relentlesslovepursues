@@ -597,3 +597,39 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
   color: var(--fg);
 }
 .episode__desc { margin-top: .6rem; font-size: .95rem; color: var(--fg-2); max-width: 52ch; }
+
+/* Clickable episodes + "Listen on" dialog */
+.episode { cursor: pointer; }
+.episode__btn { padding: 0; font: inherit; color: var(--fg-3); }
+.episode__btn img { transition: transform var(--dur) var(--ease); }
+.episode:hover .episode__btn img { transform: scale(1.04); }
+.episode:hover .episode__title { color: var(--accent); }
+.episode__play {
+  position: absolute; inset: 0; display: grid; place-items: center; color: #fff;
+  background: linear-gradient(to top, #00000066, transparent 55%);
+  opacity: .92;
+}
+.episode__btn.episode__media--empty .episode__play { background: none; color: var(--fg-3); }
+.episode__play .play-icon { width: 3rem; height: 3rem; filter: drop-shadow(0 2px 8px #0008); }
+.episode__btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.listen {
+  border: 1px solid var(--hairline); border-radius: var(--r-1);
+  background: var(--bg-plate); color: var(--fg);
+  padding: 0; width: min(92vw, 26rem); max-width: 92vw;
+  box-shadow: 0 2rem 5rem var(--shadow-lift);
+}
+.listen::backdrop { background: #000a; backdrop-filter: blur(2px); }
+.listen__panel { position: relative; padding: 2rem 1.75rem 1.75rem; }
+.listen__close { position: absolute; top: .5rem; right: .75rem; font-size: 1.75rem; line-height: 1; padding: .25rem .5rem; color: var(--fg-2); }
+.listen__close:hover { color: var(--fg); }
+.listen__title { margin-top: .5rem; font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; line-height: 1.1; letter-spacing: -.02em; }
+.listen__links { margin-top: 1.5rem; display: grid; gap: .75rem; }
+.listen__link {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1rem 1.25rem; border: 1px solid var(--hairline); border-radius: var(--r-1);
+  text-decoration: none; font-family: var(--font-display); font-weight: 700; font-size: 1.05rem;
+  transition: border-color var(--dur-fast), color var(--dur-fast);
+}
+.listen__link:hover { border-color: var(--accent); color: var(--accent); }
+.listen__none { color: var(--fg-2); font-size: .95rem; }

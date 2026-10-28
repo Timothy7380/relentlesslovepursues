@@ -22,10 +22,22 @@ replace the "Portrait placeholder" / "Cover placeholder" boxes in
 `index.html`/`styles.css` (`.hero__portrait`, `.book-cover`) with real
 `<img>` tags.
 
-## Podcast page
+## Editing the podcast
 
-`podcast.html` lists episodes. Each episode is one `<article class="episode">`
-block. To add one, copy a block, paste it at the top of the list, and swap in
-a YouTube embed, a video file, or a picture — the step-by-step options are in
-the comment box at the top of the episode list inside `podcast.html`.
-Put uploaded videos/images in the `assets` folder.
+Open `episodes.js`. Each episode is one block with a title, date, description,
+an optional picture, and links to YouTube / Spotify / Apple Podcasts. Clicking an
+episode on the site opens a "Listen on" box with the links you filled in (or goes
+straight to the link if there is only one). Add new episodes at the top.
+Pictures go in the `assets` folder.
+
+## Editing the blog
+
+Each post is its own file in `posts/`. To add one: copy any file in `posts/`,
+rename it, change the text, then add a matching line in the `<div class="posts">`
+list in `index.html`.
+
+## Publishing changes
+
+The site is hosted by GitHub Pages from the `main` branch of
+github.com/Timothy7380/relentlesslovepursues. Saving a change in the GitHub
+website (or pushing it) updates the live site in a minute or two.
