@@ -191,6 +191,7 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
   padding-inline: var(--gutter);
   padding-bottom: var(--air-l);
   padding-top: calc(62px + 2.5rem);
+  overflow-x: clip;
 }
 .hero__meta { display: flex; align-items: center; justify-content: space-between; }
 .hero__main {
@@ -199,7 +200,6 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
   align-items: center;
   gap: 2.5rem;
 }
-@media (min-width: 768px) { .hero__main { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); } }
 .hero__title {
   font-family: var(--font-display);
   font-weight: 900;
@@ -226,7 +226,28 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
   align-self: start;
   overflow: hidden;
 }
-@media (min-width: 768px) { .hero__portrait { justify-self: end; margin-inline: 0; max-width: 18rem; max-height: 38vh; } }
+/* Desktop / large tablet: portrait becomes a full-height panel on the right */
+@media (min-width: 900px) {
+  .hero { position: relative; isolation: isolate; background: var(--bg); }
+  .hero__portrait {
+    position: absolute;
+    z-index: -1;
+    top: 62px;
+    right: 0;
+    bottom: 0;
+    width: clamp(16rem, 36vw, 48rem);
+    max-width: none;
+    max-height: none;
+    aspect-ratio: auto;
+    margin: 0;
+    border-radius: 0;
+    align-self: auto;
+    justify-self: auto;
+  }
+  .hero__portrait-img { object-position: 50% 14%; }
+  /* keep the black title legible where it crosses the photo (light theme) */
+  :root:not([data-theme="dark"]) .hero__word { color: #fff; mix-blend-mode: difference; }
+}
 .hero__portrait-img {
   width: 100%;
   height: 100%;
