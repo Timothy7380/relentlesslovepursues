@@ -22,22 +22,22 @@ replace the "Portrait placeholder" / "Cover placeholder" boxes in
 `index.html`/`styles.css` (`.hero__portrait`, `.book-cover`) with real
 `<img>` tags.
 
-## Editing the podcast
+## Admin page (blog + podcast)
 
-Open `episodes.js`. Each episode is one block with a title, date, description,
-an optional picture, and links to YouTube / Spotify / Apple Podcasts. Clicking an
-episode on the site opens a "Listen on" box with the links you filled in (or goes
-straight to the link if there is only one). Add new episodes at the top.
-Pictures go in the `assets` folder.
+Go to `/admin.html` on the live site and log in. From there you can write, edit
+and delete blog posts and podcast episodes, upload pictures, add YouTube videos,
+and save things as drafts. Nothing in the code needs to be touched.
 
-## Editing the blog
+How it works: posts and episodes are stored in a free Supabase database. The
+public pages (`index.html`, `post.html`, `podcast.html`) read from it, and
+`admin.html` writes to it. The connection details are in `config.js`
+(these two values are public by design; the database's security rules decide who
+can change anything). The database setup is in `supabase-setup.sql`.
 
-Each post is its own file in `posts/`. To add one: copy any file in `posts/`,
-rename it, change the text, then add a matching line in the `<div class="posts">`
-list in `index.html`.
+The admin password can be changed inside the admin (top menu > Password).
 
-## Publishing changes
+## Publishing code changes
 
 The site is hosted by GitHub Pages from the `main` branch of
-github.com/Timothy7380/relentlesslovepursues. Saving a change in the GitHub
-website (or pushing it) updates the live site in a minute or two.
+github.com/Timothy7380/relentlesslovepursues. Pushing a change updates the live
+site in a minute or two.

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Admin — RelentlessLovePursues</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200..900&family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=11" />
+<link rel="stylesheet" href="vendor/quill.snow.css" />
+<link rel="stylesheet" href="admin.css?v=2" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body class="admin-body">
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">RELENTLESSLOVEPURSUES<span class="accent-dot">.</span> <span class="admin-tag">ADMIN</span></a>
+    <nav class="nav__links" id="admin-nav-links">
+      <a href="index.html" target="_blank" rel="noopener">View site</a>
+      <a href="#" id="btn-password" hidden>Password</a>
+      <a href="#" id="btn-logout" hidden>Log out</a>
+    </nav>
+    <button id="theme-toggle" class="label theme-toggle" type="button" aria-label="Toggle color theme">
+      <svg id="theme-icon-moon" viewBox="0 0 24 24" fill="none" class="icon-sm"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <svg id="theme-icon-sun" viewBox="0 0 24 24" fill="none" class="icon-sm is-hidden"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v2.2M12 19.8V22M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2 12h2.2M19.8 12H22M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <span id="theme-label" class="sr-only">Dark</span>
+    </button>
+  </div>
+</header>
+
+<main class="admin">
+  <div id="app" class="admin__inner"><p class="admin-muted">Loading…</p></div>
+</main>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="config.js"></script>
+<script src="vendor/supabase.js"></script>
+<script src="vendor/quill.js"></script>
+<script src="script.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

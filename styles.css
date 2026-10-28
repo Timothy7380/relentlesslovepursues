@@ -633,3 +633,24 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
 }
 .listen__link:hover { border-color: var(--accent); color: var(--accent); }
 .listen__none { color: var(--fg-2); font-size: .95rem; }
+
+/* Loading / empty states */
+.posts__status { padding-block: 2rem; color: var(--fg-2); }
+.episodes--status { display: block; }
+
+/* Rich post content (written in the admin editor) */
+.article__cover { margin-block: 2rem 0; max-width: 68ch; }
+.article__cover img { width: 100%; height: auto; display: block; border-radius: var(--r-1); }
+.article__body h2, .article__body h3 { font-family: var(--font-display); font-weight: 800; letter-spacing: -.02em; line-height: 1.1; margin: 2.2em 0 .6em; color: var(--fg); }
+.article__body h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+.article__body h3 { font-size: clamp(1.25rem, 2.2vw, 1.5rem); }
+.article__body ul, .article__body ol { padding-left: 1.4em; margin: 1.5em 0; font-size: 1.05rem; line-height: 1.75; }
+.article__body li + li { margin-top: .4em; }
+.article__body blockquote { margin: 1.8em 0; padding: .2em 0 .2em 1.25rem; border-left: 3px solid var(--accent); color: var(--fg-2); font-family: var(--font-serif); font-size: 1.3rem; line-height: 1.5; }
+.article__body a { color: var(--accent); text-underline-offset: 3px; }
+.article__body img { max-width: 100%; height: auto; display: block; margin: 2em 0; border-radius: var(--r-1); }
+.article__body iframe { width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; display: block; margin: 2em 0; border-radius: var(--r-1); }
+.article__body .ql-align-center { text-align: center; }
+.article__body .ql-align-right { text-align: right; }
+.article__body .ql-align-justify { text-align: justify; }
+.article__body > :first-child { margin-top: 0; }
