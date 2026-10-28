@@ -2,8 +2,8 @@
 .admin-tag { font-family: var(--font-mono); font-size: .6rem; letter-spacing: .2em; padding: .2rem .45rem; border: 1px solid var(--hairline); border-radius: var(--r-pill); color: var(--fg-2); vertical-align: middle; margin-left: .35rem; }
 .admin { padding: calc(62px + 2.5rem) var(--gutter) 5rem; }
 .admin__inner { max-width: 60rem; margin-inline: auto; }
-.admin h1 { font-family: var(--font-display); font-weight: 900; letter-spacing: -.03em; font-size: clamp(2rem, 5vw, 3rem); line-height: 1; }
-.admin h2 { font-family: var(--font-display); font-weight: 800; font-size: 1.4rem; letter-spacing: -.02em; }
+.admin h1 { font-family: var(--font-display); font-weight: 800; letter-spacing: -.035em; font-size: clamp(2rem, 5vw, 3rem); line-height: 1; }
+.admin h2 { font-family: var(--font-display); font-weight: 700; font-size: 1.4rem; letter-spacing: -.02em; }
 .admin-muted { color: var(--fg-2); }
 .admin-card { border: 1px solid var(--hairline); border-radius: var(--r-1); background: var(--bg-plate); padding: clamp(1.25rem, 3vw, 2rem); }
 .admin-card--narrow { max-width: 26rem; margin-inline: auto; margin-top: 3rem; }
